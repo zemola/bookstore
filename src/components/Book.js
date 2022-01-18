@@ -6,9 +6,9 @@ import Button from './Button';
 const Book = (props) => {
   const name = props;
   Book.propTypes = {
-    type: PropTypes.string,
-    title: PropTypes.string,
-    author: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
   }
 
   return (
