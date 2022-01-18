@@ -11,7 +11,7 @@ body {
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
-     sans-serif;
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,7 +19,8 @@ body {
 code {
   font-family:
     source-code-pro,
-    Menlo, Monaco,
+    Menlo,
+    Monaco,
     Consolas,
     'Courier New',
     monospace;
