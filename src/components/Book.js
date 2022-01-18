@@ -1,12 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Button from './Button';
 
 const Book = (props) => {
   const name = props;
-  Book.propTypes = {
-    name: PropTypes.string.isRequired,
-  }
   return (
     <div key={name.data[0].id}>
       <h1>{name.data[0].type}</h1>
