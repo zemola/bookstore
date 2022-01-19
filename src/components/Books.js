@@ -1,35 +1,18 @@
-import React from 'react';
-import Book from './Book';
+import { useSelector } from 'react-redux';
 import AddBooks from './AddBooks';
+import Book from './Book';
 
 const Books = () => {
-  const data = [
-    {
-      id: 1,
-      type: 'Action',
-      title: 'Koto Aye',
-      author: 'Ajileye Osho',
-      ratings: '100',
-    },
-    {
-      id: 2,
-      type: 'Love',
-      title: 'Kokoro Ife',
-      author: 'Kunle Afolayan',
-      ratings: '70',
-    },
-    {
-      id: 3,
-      type: 'Drama',
-      title: 'Aragbe laye',
-      author: 'Taiwo Hassan',
-      ratings: '85',
-    },
-  ];
+  const books = useSelector((state) => state.booksReducer);
   return (
-
     <div>
-      <Book data={data} />
+      {books.map((task) => (
+        <Book
+          id={task.id}
+          key={task.id}
+          title={task.title}
+        />
+      ))}
       <AddBooks />
     </div>
   );
