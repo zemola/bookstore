@@ -52,16 +52,16 @@ const reducer = (state = initialState, action) => {
       return [...state, action.payload];
     case REMOVE_BOOK:
       return state.filter((book) => book.item_id !== action.payload);// eslint-disable-line
-      case FETCH_BOOK:
-        return Object.entries(action.payload).map(([key, value]) => {
-          const [book] = value;
-          return {
-            item_id: key,
-            ...book,
-          };
-        });
-      default:
-        return state;
+    case FETCH_BOOK:
+      return Object.entries(action.payload).map(([key, value]) => {
+        const [book] = value;
+        return {
+          item_id: key,
+          ...book,
+        };
+      });
+    default:
+      return state;
   }
 };
 
