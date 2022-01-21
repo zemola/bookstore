@@ -25,20 +25,24 @@ const AddBooks = () => {
     setCategory(e.target.value);
   };
   return (
-    <form>
-      <input value={value} onChange={(e) => setValue(e.target.value)} placeholder="ADD NEW BOOK" required />
-      <select name="books" id="book" onChange={categoryHandler} required>
-        <option>Category</option>
-        <option value="Action">Action</option>
-        <option value="Science Fiction">Science Fiction</option>
-        <option value="Economy">Economy</option>
-        <option value="Cooking">Cooking</option>
-        <option value="Non-Fiction">Non-Fiction</option>
-        <option value="History">History</option>
-        <option value="Romance">Romance</option>
-      </select>
-      <input type="button" value="Add Book" onClick={submitBookToStore} />
-    </form>
+    <div className="form-div">
+      <hr />
+      <h3 className="new-book">ADD NEW BOOK</h3>
+      <form>
+        <input className="inp" value={value} onChange={(e) => setValue(e.target.value)} placeholder="Book title" required />
+        <select className="cate" name="books" id="book" onChange={categoryHandler} required>
+          <option>Category</option>
+          <option value="Action">Action</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Economy">Economy</option>
+          <option value="Cooking">Cooking</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="History">History</option>
+          <option value="Romance">Romance</option>
+        </select>
+        <input className="adding" type="button" value="ADD BOOK" onClick={submitBookToStore} />
+      </form>
+    </div>
   );
 };
 

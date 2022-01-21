@@ -3,7 +3,7 @@
 
 
 ## VIEW
-
+![screenshot](screenshot.PNG)SCREENSHOT OF DESKTOP VERSION )
 
 
 ## Built With
@@ -16,7 +16,7 @@
 - Technologies used
 
 ## Live Demo
-
+<a href= "https://zemola-bookstore.herokuapp.com/">BookStore</a>
 
 
 
