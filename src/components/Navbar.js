@@ -6,7 +6,7 @@ const Nav = () => (
     <nav className="same">
       <h1 className="heading">Bookstore CMS</h1>
       <ul className="nav-link">
-        <Link to="/">BOOKS</Link>
+        <Link className="book-link" to="/">BOOKS</Link>
         <Link to="/categories">CATEGORIES</Link>
       </ul>
     </nav>

@@ -11,7 +11,7 @@ const Book = (props) => {
         <article>
           <p className="action">{book.category}</p>
           <h2>{book.title}</h2>
-          <p className="action">Olatunji Azeem</p>
+          <p className="author">Olatunji Azeem</p>
           <ul className="comment-links">
             <li>Comments</li>
             <li>
