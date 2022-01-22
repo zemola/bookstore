@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import AddBooks from './AddBooks';
+import Form from './AddBooks';
 import Book from './Book';
 import { getBookFromApi } from '../redux/books/books';
 
@@ -20,7 +20,7 @@ const Books = () => {
           category={book.category}
         />
       ))}
-      <AddBooks />
+      <Form />
     </div>
   );
 };

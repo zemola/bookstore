@@ -1,27 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Slab:wght@300&display=swap');
+
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+#root {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f5f6fa;
+  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+  margin-top: 80px;
+}
+
+.book {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 8px 30px;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 85px;
+  background-color: white;
+}
+
+.same {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading {
+  color: #0290ff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.book-link {
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: #a4a7af;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 10px;
+}
+
+.action {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--black-two);
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.current {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.per {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.cur-head {
+  margin: 15px 0;
+  padding: 0;
+  color: #c5c1c1;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+img {
+  cursor: pointer;
+}
+
+.sec {
+  padding: 0;
+  margin: 0;
+  color: black;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.book-title {
+  font-family: 'Roboto Slab', serif;
+}
+
+.comment-links {
+  display: flex;
+  color: #4386bf;
+  font-family: 'Roboto Slab', serif;
+}
+
+.new-book {
+  color: rgb(107, 106, 106);
+}
+
+.btn {
+  border: none;
+  color: #4386bf;
+  background-color: white;
+  cursor: pointer;
+  border-left: 1px solid rgb(165, 164, 164);
+  border-right: 1px solid rgb(165, 164, 164);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.percent {
+  margin: 0;
+  padding: 0;
+}
+
+.progress {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+  color: #fff;
+}
+
+.form-div {
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 100px;
+}
+
+.inp {
+  width: 50%;
+  padding: 5px;
+  margin-right: 32px;
+}
+
+.cate {
+  width: 26%;
+  padding: 5px;
+  margin-right: 32px;
+  color: rgb(175, 169, 169);
+}
+
+.adding {
+  width: 15%;
+  padding: 5px;
+  background-color: #0290ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.round {
+  border-radius: 100%;
+  width: 80px;
+  border: 3px solid rgb(223, 211, 211);
+  height: 80px;
+  margin-top: 21px;
+  border-bottom: 3px solid #0290ff;
+  border-right: 3px solid #0290ff;
+  border-top: 3px solid #0290ff;
+}
+
+.wrapper-round {
+  display: flex;
+  border-right: 1px solid rgb(165, 164, 164);
+  padding-right: 10%;
+}
+
+form {
+  width: 100%;
 }
