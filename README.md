@@ -26,7 +26,7 @@
  To Access my project locally please follow either of the two steps listed below ;
 
 STEP 1
-1. Enter this url:  https://github.com/zemola/calculator.git in your web browser.
+1. Enter this url:  https://github.com/zemola/bookstore.git in your web browser.
 2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
 3. click on the green button with name "Code", Select download Zip option from drop down menu.
 4. Once the download is extract the zip file into any folder of your choice on your system.
@@ -39,7 +39,7 @@ STEP 1
 STEP 2
 1. Open command prompt
 2. go to the designated folder where you want to clone the repository to.
-3. enter  git clone https://github.com/zemola/calculator.git
+3. enter  git clone https://github.com/zemola/bookstore.git
 4. enter  $ cd calculator
 5. Install npm packages, run: npm i or npm install
 6. Then run the server: npm start
@@ -72,7 +72,7 @@ STEP 2
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zemola/calculator/issues).
+Feel free to check the [issues page](https://github.com/zemola/bookstore/issues).
 
 
 ## Show your support
